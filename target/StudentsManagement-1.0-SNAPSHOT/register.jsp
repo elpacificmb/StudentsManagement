@@ -34,10 +34,10 @@
                     String password = request.getParameter("password");
                     String confirmPassword = request.getParameter("confirmPassword");
                     if (rollNumber != "" && rollNumber != "" && password != "") {
-                        if (password != confirmPassword) {
-                            color = "red";
-                            msg = "Passwords do not match";
-                        } else {
+//                        if (password != confirmPassword) {
+//                            color = "red";
+//                            msg = "Passwords do not match";
+//                        } else {
                             Class.forName("com.mysql.jdbc.Driver");
                             con = DriverManager.getConnection("jdbc:mysql://localhost/mis", "root", "");
                             String query = "INSERT INTO user(rollNumber,email,password) VALUES (?,?,?)";
@@ -52,7 +52,7 @@
 
                             color = "green";
                             msg = "Student Added Succesfully";
-                        }
+//                        }
 
                     } else {
                         color = "red";
@@ -71,7 +71,7 @@
 
             <div class="w-50 m-auto text-center p-3 bg-body rounded shadow-sm">
 
-                <div class="text-center div-form">
+                <div class="">
 
                     <form id="form" method="post" action="register.jsp" class="form-signin">
                         <h1 class="h3 mb-3 fw-normal">Please sign up</h1>

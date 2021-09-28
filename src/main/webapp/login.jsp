@@ -21,9 +21,8 @@
 
         <main class="container">
 
-            <div class="w-50 m-auto text-center p-3 bg-body rounded shadow-sm">
 
-                <div class="text-center div-form">
+                <div class="">
 
                     <form id="form" action="LoginServlet" method="POST" class="form-signin">
                         <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
@@ -49,8 +48,6 @@
                         <p class="mt-3 mb-2 text-muted">Elpacific &copy; 2021</p>
                     </form>
                 </div>
-
-            </div>
 
         </main>
 
